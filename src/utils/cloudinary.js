@@ -2,9 +2,9 @@ import {v2 as cloudinary} from "cloudinary"
 import fs from "fs"
 
 cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    cloud_name: 'dzwyba6pl',
     api_key: 883577113399265,
-    api_secret: "CLOUDINARY_API_SECRET"
+    api_secret: "39Pif1EuUedzrSmIiNw1L3gpxic"
 });
 
 const uploadOnCloudinary = async (localFilePath) => {
@@ -17,10 +17,14 @@ const uploadOnCloudinary = async (localFilePath) => {
             resource_type: "auto"
         })
         // file has been uploaded successfully
-        console.log("file is uploaded on cloud ",response.url);
+        // console.log("file is uploaded on cloud ",response.url);
+        fs.unlinkSync(localFilePath)
         return response
+    } 
+    
+    catch (error) {
+        console.log(error);
         
-    } catch (error) {
         fs.unlinkSync(localFilePath) // remove the locally saved temp file as the upload operation got failed
         return null;
     }
