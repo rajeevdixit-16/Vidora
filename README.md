@@ -93,7 +93,7 @@ npm start
 ```
 
 ### 🔗 API Endpoints (Overview)
-## 👤 User
+### 👤 User
 
   POST /api/v1/users/register – Register a new user
   
@@ -101,7 +101,7 @@ npm start
   
   GET /api/v1/users/profile – Get user profile
 
-## 🎥 Video
+### 🎥 Video
 
   POST /api/v1/videos/upload – Upload new video
   
@@ -109,23 +109,23 @@ npm start
   
   DELETE /api/v1/videos/:id – Delete video
 
-## 💬 Comments
+### 💬 Comments
 
   POST /api/v1/comments/:videoId – Add comment
   
   GET /api/v1/comments/:videoId – Fetch comments
 
-## 👍 Likes
+### 👍 Likes
 
   POST /api/v1/likes/toggle/:videoId – Like or unlike a video
 
-## 👥 Subscriptions
+### 👥 Subscriptions
 
   POST /api/v1/subscriptions/:userId – Subscribe to a user
   
   DELETE /api/v1/subscriptions/:userId – Unsubscribe
 
-## 🧠 Error Handling
+### 🧠 Error Handling
 
   Centralized error and response structure using:
   
@@ -135,7 +135,7 @@ npm start
   
   asyncHandler.js for safe async execution
 
-## 🧑‍💻 Future Enhancements
+### 🧑‍💻 Future Enhancements
 
   🔍 Video search and filtering
   
@@ -145,7 +145,7 @@ npm start
   
   🧠 AI-based video recommendations
 
-## 🏁 Author
+### 🏁 Author
 
 #👤 Rajeev Dixit
   📧 [dixitrajeev5202@gmail.com]
